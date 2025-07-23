@@ -6,7 +6,6 @@ headers = {
 }
 
 tmarkt_url = "https://www.transfermarkt.com/"
-fbref_url = "https://www.fbref.com/"
 
 def get_robots_txt(url):
     robots_url = urljoin(url, 'robots.txt')
@@ -22,4 +21,3 @@ def get_robots_txt(url):
         print(url + ' - unexpected status code - ' + str(response.status_code))
 
 get_robots_txt(tmarkt_url)
-get_robots_txt(fbref_url)
